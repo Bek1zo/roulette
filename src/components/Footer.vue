@@ -3,7 +3,8 @@
 </script>
 
 <template>
-<h5>Roulette Site (c) 2023 Bek1zo</h5>
+<!--<h5>Roulette Site (c) 2023 Bek1zo</h5>-->
+  <h5>Footer</h5>
 </template>
 
 <style scoped>

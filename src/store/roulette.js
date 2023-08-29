@@ -7,79 +7,74 @@ export const useRouletteStore = defineStore('roulette', {
 
             categories: [
                 {
-                    name: 'Обычные',
-                    chance: 40,
-                    color: '#1349a6',
-                    items: [
-                        {
-                            name: 'Ваз 2101',
-                            price: '200 USD',
-                            chance: 10,
-                            image: null,
-                        },
-                        {
-                            name: 'Ваз 2105',
-                            price: '250 USD',
-                            chance: 10,
-                            image: null,
-                        },
-                    ]
+                    name: 'Ваз 2101',
+                    category: {
+                        name: 'Обычное',
+                        color: '#fff'
+                    },
+                    price: '200 USD',
+                    chance: 10,
+                    image: '/src/assets/images/items/vaz-2101.jpg',
                 },
                 {
-                    name: 'Редкие',
-                    chance: 40,
-                    color: '#bd0202',
-                    items: [
-                        {
-                            name: 'Volkswagen Golf',
-                            price: '500 USD',
-                            chance: 20,
-                            image: null,
-                        },
-                    ]
+                    name: 'Ваз 2105',
+                    category: {
+                        name: 'Обычное',
+                        color: '#22679d'
+                    },
+                    price: '250 USD',
+                    chance: 10,
+                    image: '/src/assets/images/items/vaz-2105.jpg',
                 },
                 {
-                    name: 'Легендарное',
+                    name: 'Volkswagen Golf',
+                    category: {
+                        name: 'Редкое',
+                        color: '#a91a1a'
+                    },
+                    price: '500 USD',
                     chance: 20,
-                    color: '#e37811',
-                    items: [
-                        {
-                            name: 'Lamborghini Uris',
-                            price: '1000 USD',
-                            chance: 5,
-                            image: null,
-                        },
-                    ]
-                }
+                    image: '/src/assets/images/items/golf.jpg',
+                },
+                {
+                    name: 'Lamborghini Uris',
+                    category: {
+                        name: 'Легендарное',
+                        color: '#e88e04'
+                    },
+                    price: '1000 USD',
+                    chance: 5,
+                    image: '/src/assets/images/items/urus.jpg',
+                },
             ],
             users: [
                 {
                     name: 'John',
-                    avatar: '@/src/assets/images/avatar/dog.jpg'
+                    avatar: '/src/assets/images/avatar/beach.jpg'
                 },
                 {
                     name: 'Eduard',
-                    avatar: '../assets/images/avatar/beach.jpg'
+                    avatar: '/src/assets/images/avatar/beach.jpg'
                 },
                 {
                     name: 'Pavel',
-                    avatar: '../assets/images/avatar/strawberry.jpg'
+                    avatar: '/src/assets/images/avatar/strawberry.jpg'
                 },
                 {
                     name: 'Dog',
-                    avatar: '../assets/images/avatar/dog.jpg'
+                    avatar: '/src/assets/images/avatar/dog.jpg'
                 },
                 {
                     name: 'Dog',
-                    avatar: '../assets/images/avatar/dog.jpg'
+                    avatar: '/src/assets/images/avatar/dog.jpg'
                 },
                 {
                     name: 'Dog',
-                    avatar: '../assets/images/avatar/dog.jpg'
+                    avatar: '/src/assets/images/avatar/dog.jpg'
                 },
                 {
                     name: 'Dog',
-                    avatar: '../assets/images/avatar/dog.jpg'
+                    avatar: '/src/assets/images/avatar/dog.jpg'
                 },
             ]
         }

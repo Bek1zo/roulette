@@ -3,7 +3,7 @@
     <Logo/>
   </div>
   <div class="body">
-    <Roulette/>
+    <router-view/>
   </div>
   <div class="footer">
     <Footer/>
@@ -16,20 +16,31 @@ import Logo from "./components/Logo.vue";
 import Footer from "./components/Footer.vue";
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
 .header {
-  height: 20vh;
+  height: 15vh;
+  width: 100%;
   display: flex;
   justify-content: center;
+  background-color: $boxColor;
+  border-bottom: 0.1vh solid $borderColor;
 }
 .body {
-  height: 75vh;
-}
-.footer {
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  gap: 1vh;
+}
+.footer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
   height: 5vh;
-  border-top: 2px solid black;
+  border-top: 0.1vh solid $borderColor;
+  color: $textColor;
+  background-color: $boxColor;
 }
 </style>

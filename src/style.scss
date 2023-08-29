@@ -1,0 +1,23 @@
+@font-face {
+  font-family: RobotoCondensedRegular;
+  src: url(src/assets/fonts/RobotoCondensed-Regular.ttf);
+}
+
+@font-face {
+  font-family: RobotoCondensedBold;
+  src: url(src/assets/fonts/RobotoCondensed-Bold.ttf);
+  font-weight: bold;
+}
+
+body {
+  position: absolute;
+  font-family: RobotoCondensedRegular;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  background-color: $backgroundColor;
+  color: $textColor;
+  font-size: 2vmin;
+}

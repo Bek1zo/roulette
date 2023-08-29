@@ -7,5 +7,9 @@ export default createRouter({
             path: '/',
             component: () => import('/src/views/Roulette.vue'),
         },
+        {
+            path: '/test',
+            component: () => import('/src/views/Test.vue'),
+        },
     ],
 })
